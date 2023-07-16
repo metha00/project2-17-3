@@ -63,8 +63,8 @@
                     <li><a href="{{ route('login') }}" target="_blank">Login</a></li>
                 </ul>
             </nav>
-                    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-                    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         </div>
     </header><!-- End Header -->
 
@@ -125,8 +125,7 @@
                             </p>
 
                             <div class="position-relative mt-4">
-                                <img src="{{ asset('frontend/assets/img/about-2.jpg') }}" class="img-fluid"
-                                    alt="">
+                                <img src="{{ asset('frontend/assets/img/about-2.jpg') }}" class="img-fluid" alt="">
                                 <!--<a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>-->
                             </div>
                         </div>
@@ -280,18 +279,18 @@
                         <div class="row gy-5">
 
                             @foreach ($product as $pro)
-                                <div class="col-lg-4 menu-item">
-                                    <a href="{{ asset('backend/img/img_pro/' . $pro->image) }}" class="glightbox"><img
-                                            src="{{ asset('backend/img/img_pro/' . $pro->image) }}"
-                                            class="menu-img img-fluid" alt=""></a>
-                                    <h4>{{ $pro->name }}</h4>
-                                    <p class="ingredients">
-                                        {{ $pro->description }}
-                                    </p>
-                                    <p class="price">
-                                        ฿{{ $pro->price }}
-                                    </p>
-                                </div><!-- Menu Item1 -->
+                            <div class="col-lg-4 menu-item">
+                                <a href="{{ asset('backend/img/img_pro/' . $pro->image) }}" class="glightbox"><img
+                                        src="{{ asset('backend/img/img_pro/' . $pro->image) }}"
+                                        class="menu-img img-fluid" alt=""></a>
+                                <h4>{{ $pro->name }}</h4>
+                                <p class="ingredients">
+                                    {{ $pro->description }}
+                                </p>
+                                <p class="price">
+                                    ฿{{ $pro->price }}
+                                </p>
+                            </div><!-- Menu Item1 -->
                             @endforeach
 
 
@@ -821,8 +820,7 @@
 
                 <div class="row gy-4">
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                        data-aos-delay="100">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                         <div class="chef-member">
                             <div class="member-img">
                                 <img src="{{ asset('frontend/assets/img/chefs/chefs-1.jpg') }}" class="img-fluid"
@@ -842,8 +840,7 @@
                         </div>
                     </div><!-- End Chefs Member -->
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                        data-aos-delay="200">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                         <div class="chef-member">
                             <div class="member-img">
                                 <img src="{{ asset('frontend/assets/img/chefs/chefs-2.jpg') }}" class="img-fluid"
@@ -863,8 +860,7 @@
                         </div>
                     </div><!-- End Chefs Member -->
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up"
-                        data-aos-delay="300">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div class="chef-member">
                             <div class="member-img">
                                 <img src="{{ asset('frontend/assets/img/chefs/chefs-3.jpg') }}" class="img-fluid"
@@ -1063,20 +1059,21 @@
                     class="php-email-form p-3 p-md-4">
                     <div class="row">
                         <div class="col-xl-6 form-group">
-                            <input type="text" name="name" class="form-control" id="name"
-                                placeholder="Your Name" required>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                required>
                         </div>
                         <div class="col-xl-6 form-group">
-                            <input type="email" class="form-control" name="email" id="email"
-                                placeholder="Your Email" required>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject"
-                            placeholder="Subject" required>
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                            required>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                            required></textarea>
                     </div>
                     <div class="my-3">
                         <div class="loading">Loading</div>
